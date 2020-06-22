@@ -57,7 +57,12 @@
 
     // Testing
     // will only fire if something is wrong.
-    console.assert(1 === 1, 'That is wrong!');
+    // console.assert(1 === 1, 'That is wrong!');
+
+    // and you can test to see if something is wrong
+    const p = document.querySelector('p');
+
+    console.assert(p.classList.contains('ouch'), 'That is wrong!');
 
     // clearing
 
