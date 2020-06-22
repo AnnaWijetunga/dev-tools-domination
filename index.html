@@ -84,7 +84,8 @@
 
     // shows info in console, can be messy if there's a lot
     dogs.forEach(dog => {
-        console.group(`${dog.name}`);
+        // console.group(`${dog.name}`);
+        console.groupCollapsed(`${dog.name}`);
         console.log(`This is ${dog.name}.`);
         console.log(`${dog.name} is ${dog.age} years old`);
         console.log(`${dog.name} is ${dog.age * 7} dog yeras old`);
