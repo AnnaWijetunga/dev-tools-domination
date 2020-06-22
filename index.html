@@ -67,7 +67,7 @@
 
     // clearing
     // clear your console - mess with a dev!
-    // console.clear();
+    console.clear();
 
     // Viewing DOM Elements
     // see the element
@@ -75,9 +75,17 @@
     // opens up, look at class list and methods, children, etc
     console.dir(p);
 
+    console.clear();
 
     // Grouping together
-
+    //
+    console.group(`${dogname}`);
+    // shows info in console, can be messy if there's a lot
+    dogs.forEach(dog => {
+        console.log(`This is ${dog.name}.`);
+        console.log(`${dog.name} is ${dog.age} years old`);
+        console.log(`${dog.name} is ${dog.age * 7} dog yeras old`);
+    });
 
     // counting
 
